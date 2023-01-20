@@ -2,9 +2,8 @@ import os
 os.system("ng new {{cookiecutter.angularprojectname}}")
 os.chdir("{{cookiecutter.angularprojectname}}")
 items="{{cookiecutter.angularprojectname}}"
-for x in items:
-  print(x)
-  os.system("ng generate component {{x}}")
+print(items)
+
 # os.system("ng generate component signup")
 # routes = """
 # import { NgModule } from '@angular/core';
