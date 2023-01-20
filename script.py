@@ -1,6 +1,6 @@
 import os
-os.system("ng new new")
-os.chdir("newproject")
+os.system("ng new {{cookiecutter.projectname}}")
+os.chdir("{{cookiecutter.projectname}}")
 os.system("ng generate component login")
 os.system("ng generate component signup")
 routes = """
