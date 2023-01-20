@@ -109,8 +109,7 @@ with open("src/app/login/login.component.css", "w") as f:
 apphtml="""
 <router-outlet></router-outlet>
 """
-
-with open("src/app/app.component.css", "w") as f:
+with open("src/app/app.component.html", "w") as f:
    f.write(apphtml)
 
 
