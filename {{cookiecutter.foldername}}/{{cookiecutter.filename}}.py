@@ -3,7 +3,7 @@ os.system("ng new {{cookiecutter.angularprojectname}}")
 os.chdir("{{cookiecutter.angularprojectname}}")
 stringOfComponents= cookiecutter.angularcomponents
 # components = stringOfComponents.split()
-print("{{stringOfComponents}}")
+print("{{cookiecutter.angularcomponents}}")
 # for x in components:
 #   print(x)
 #   os.system("ng generate component {{x}}")
