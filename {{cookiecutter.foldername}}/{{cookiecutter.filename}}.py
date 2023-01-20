@@ -4,9 +4,8 @@ os.system("ng new {{cookiecutter.angularprojectname}}")
 os.chdir("{{cookiecutter.angularprojectname}}")
 items="{{cookiecutter.angularcomponents}}"
 listofcomponents= json.loads(items)
-
-print(listofcomponents)
-# os.system("ng generate component signup")
+for x in listofcomponents:
+   os.system("ng generate component {{x}}")
 # routes = """
 # import { NgModule } from '@angular/core';
 # import { Routes, RouterModule } from '@angular/router';
