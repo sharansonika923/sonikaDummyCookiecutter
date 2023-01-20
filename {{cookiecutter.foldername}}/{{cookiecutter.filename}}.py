@@ -1,7 +1,7 @@
 import os
 os.system("ng new {{cookiecutter.angularprojectname}}")
 os.chdir("{{cookiecutter.angularprojectname}}")
-stringOfComponents= "{{cookiecutter.angularcomponents}}"
+stringOfComponents= cookiecutter.angularcomponents
 # components = stringOfComponents.split()
 print("{{stringOfComponents}}")
 # for x in components:
