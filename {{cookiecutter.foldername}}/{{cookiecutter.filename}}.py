@@ -1,8 +1,11 @@
 import os
+import json
 os.system("ng new {{cookiecutter.angularprojectname}}")
 os.chdir("{{cookiecutter.angularprojectname}}")
-items=list("{{cookiecutter.angularcomponents}}")
-print("{{items}}")
+items="{{cookiecutter.angularcomponents}}"
+listofcomponents= json.loads(items)
+
+print("{{listofcomponents}}")
 # os.system("ng generate component signup")
 # routes = """
 # import { NgModule } from '@angular/core';
