@@ -1,7 +1,9 @@
 import os
 os.system("ng new {{cookiecutter.angularprojectname}}")
 os.chdir("{{cookiecutter.angularprojectname}}")
-for x in cookiecutter.angularcomponents:
+stringOfComponents= "{{cookiecutter.angularcomponents}}"
+components = stringOfComponents.split()
+for x in components:
   print(x)
   os.system("ng generate component {{x}}")
 # os.system("ng generate component signup")

@@ -1,6 +1,6 @@
 {
   "angularprojectname": "geeta",
-  "angularcomponents": ["login", "signup"],
+  "angularcomponents": "login,signup",
   "foldername": "folder",
   "filename": "file"
 }
