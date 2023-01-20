@@ -1,10 +1,10 @@
 import os
 
 # Create the Angular project
-os.system("ng new {{cookiecutter.projectname}}")
+os.system("ng new newproject")
 
 # Navigate into the project directory
-os.chdir("{{cookiecutter.projectname}}")
+os.chdir("newproject")
 
 # Create the login component
 os.system("ng generate component login")
