@@ -1,18 +1,8 @@
 import os
-
-# Create the Angular project
-os.system("ng new newproject")
-
-# Navigate into the project directory
+os.system("ng new new")
 os.chdir("newproject")
-
-# Create the login component
 os.system("ng generate component login")
-
-# Create the signup component
 os.system("ng generate component signup")
-
-# Add routes for the login and signup components
 routes = """
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
